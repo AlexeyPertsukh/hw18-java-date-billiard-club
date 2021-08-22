@@ -20,7 +20,6 @@ public class ForFiles {
             System.out.println();
             System.out.println(filename);
             fr.close();
-            System.out.println();
             return true;
         }
         catch(IOException ex){

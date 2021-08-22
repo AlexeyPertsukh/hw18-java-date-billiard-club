@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 public class Prog {
 
+    private static final String GIT_URL = "https://github.com/AlexeyPertsukh/hw18-java-date-billiard-club";
     private final Scanner sc;
     private String cmd;
     private boolean endProg;
@@ -402,6 +403,8 @@ public class Prog {
     private void printHelp() {
         String fileName = ForFiles.getFilenameWithAbsolutePatch(Const.LOCAL_PATCH, Const.FILENAME_HELP);
         ForFiles.printFromFile(fileName);
+        System.out.println(GIT_URL);
+        System.out.println();
         My.nextCharLowerCase(sc, "Введите 'y' для продолжения: ",'y');
 
     }
